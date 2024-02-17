@@ -28,6 +28,11 @@ public class CameraFollow : MonoBehaviour
         objectToFollow = player2;
     }
     
+    public void Quit()
+    {
+        Application.Quit();
+    }
+    
     private void LateUpdate()
     {
         transform.position = offset + objectToFollow.transform.position;
