@@ -15,6 +15,7 @@ public class CameraFollow : MonoBehaviour
     private void Start()
     {
         offset = transform.position;
+        objectToFollow = player1;
     }
 
     public void SwapToPlayer1(InputAction.CallbackContext context)
